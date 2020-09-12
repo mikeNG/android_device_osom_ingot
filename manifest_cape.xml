@@ -660,8 +660,5 @@
         </interface>
         <fqname>@2.0::ISPUManager/default</fqname>
     </hal>
-    <sepolicy>
-        <version>33.0</version>
-    </sepolicy>
     <kernel target-level="6"/>
 </manifest>
