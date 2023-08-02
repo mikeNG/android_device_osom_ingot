@@ -1,0 +1,11 @@
+libqti-perfd-client.so
+libadsprpc.so
+libcdsprpc.so
+libsdsprpc.so
+libfastcvopt.so
+libOpenCL.so
+libqmi_cci.so
+libqmi_common_so.so
+libqmiservices.so
+libqmimotext.so
+libiqi_bridge.so
