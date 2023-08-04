@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_eqs.mk
+    $(LOCAL_DIR)/lineage_ingot.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_eqs-user \
-    lineage_eqs-userdebug \
-    lineage_eqs-eng
+    lineage_ingot-user \
+    lineage_ingot-userdebug \
+    lineage_ingot-eng

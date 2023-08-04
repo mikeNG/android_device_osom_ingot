@@ -16,7 +16,7 @@
 
 BOARD_VENDOR := motorola
 
-DEVICE_PATH := device/motorola/eqs
+DEVICE_PATH := device/osom/ingot
 
 # Architecture
 TARGET_ARCH := arm64
@@ -34,7 +34,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := eqs
+TARGET_BOOTLOADER_BOARD_NAME := ingot
 TARGET_NO_BOOTLOADER := true
 
 # Build
@@ -249,4 +249,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
-include vendor/motorola/eqs/BoardConfigVendor.mk
+include vendor/osom/ingot/BoardConfigVendor.mk

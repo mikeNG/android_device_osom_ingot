@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=eqs
-VENDOR=motorola
+DEVICE=ingot
+VENDOR=osom
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

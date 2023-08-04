@@ -18,22 +18,22 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from eqs device
-$(call inherit-product, device/motorola/eqs/device.mk)
+# Inherit from ingot device
+$(call inherit-product, device/osom/ingot/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_eqs
-PRODUCT_DEVICE := eqs
-PRODUCT_MANUFACTURER := motorola
-PRODUCT_BRAND := motorola
-PRODUCT_MODEL := motorola edge 30 ultra
+PRODUCT_NAME := lineage_ingot
+PRODUCT_DEVICE := ingot
+PRODUCT_MANUFACTURER := Solana Mobile
+PRODUCT_BRAND := OSOM
+PRODUCT_MODEL := Saga
 
-PRODUCT_GMS_CLIENTID_BASE := android-motorola
+PRODUCT_GMS_CLIENTID_BASE := android-osom
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=eqs_ge \
-    PRIVATE_BUILD_DESC="eqs_ge-user 12 S3SQS32.16-72-31-3 47c58c-b5d541 release-keys"
+    TARGET_PRODUCT=ingot \
+    PRIVATE_BUILD_DESC="ingot-user 13 TKQ1.221220.425 550 release-keys"
 
-BUILD_FINGERPRINT := motorola/eqs_ge/msi:12/S3SQS32.16-72-31-3/47c58c-b5d541:user/release-keys
+BUILD_FINGERPRINT := OSOM/ingot/ingot:13/TKQ1.221220.425/550:user/release-keys
