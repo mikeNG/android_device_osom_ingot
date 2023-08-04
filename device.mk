@@ -317,11 +317,6 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor \
     android.hardware.media.c2@1.2.vendor
 
-# MotoActions
-PRODUCT_PACKAGES += \
-    MotoActions \
-    MotoCommonOverlay
-
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
@@ -547,7 +542,6 @@ PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
-    libqsap_sdk \
     libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
