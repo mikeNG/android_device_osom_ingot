@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
-    Copyright (c) 2018-2021 Qualcomm Technologies, Inc.
+    Copyright (c) 2018-2022 Qualcomm Technologies, Inc.
     All Rights Reserved.
     Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -43,7 +43,7 @@
 -->
 
 <!--
- Lahaina Non-Secure decoder capabilities
+ Cape Non-Secure decoder capabilities
  (MB is defined as 16x16)
  _______________________________________________________
  | Codec       |  W      H      fps     Mbps    MB/s   |
@@ -57,7 +57,7 @@
  | mpeg2       | 1920   1088    30       40     244800 |
  |_____________|_______________________________________|
 
- Lahaina Secure decoder capabilities
+ Cape Secure decoder capabilities
  (MB is defined as 16x16)
  __________________________________________________
  | Codec    |  W      H      fps    Mbps   MB/s   |
@@ -70,7 +70,7 @@
  |          | 4096   2176    48     40            |
  |__________|_____________________________________|
 
- Lahaina Non-Secure encoder capabilities (Secure not supported)
+ Cape Non-Secure encoder capabilities (Secure not supported)
  (MB is defined as 16x16)
  __________________________________________________
  | Codec    |  W      H      fps   Mbps    MB/s   |
@@ -83,13 +83,10 @@
 -->
 
 <MediaCodecs>
-    <Include href="media_codecs_google_c2_telephony.xml" />
-<!--
     <Include href="media_codecs_google_audio.xml" />
     <Include href="media_codecs_vendor_audio.xml" />
     <Include href="media_codecs_google_telephony.xml" />
     <Include href="media_codecs_c2_audio.xml" />
--->
     <Settings>
         <Setting name="max-video-encoder-input-buffers" value="11" />
     </Settings>
@@ -307,7 +304,5 @@
             <Limit name="performance-point-1920x1080" value="6" />
         </MediaCodec>
     </Encoders>
-<!--
     <Include href="media_codecs_google_c2.xml" />
--->
 </MediaCodecs>
