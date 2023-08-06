@@ -486,10 +486,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0 \
     android.hardware.thermal@2.0.vendor
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.eqs
-
 # Trusted UI
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor \
