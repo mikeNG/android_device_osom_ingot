@@ -148,15 +148,11 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/device_framework_matrix.xml \
-    $(DEVICE_PATH)/device_framework_matrix_eqs.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_SKUS := cape
 DEVICE_MANIFEST_CAPE_FILES += \
-    $(DEVICE_PATH)/manifest_cape.xml \
-    $(DEVICE_PATH)/manifest_eqs.xml
-ODM_MANIFEST_SKUS += dne
-ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_eqs_ese.xml
+    $(DEVICE_PATH)/manifest_cape.xml
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
