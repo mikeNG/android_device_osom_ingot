@@ -7,6 +7,3 @@ audio.sys.offload.pstimeout.secs=3
 
 # Media
 media.stagefright.audio.deep=false
-
-# Moto
-ro.vendor.product.display=motorola edge 30 ultra
