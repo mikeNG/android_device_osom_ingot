@@ -31,11 +31,6 @@
 #=============================================================================
 
 function configure_zram_parameters() {
-	# Moto yangbq2: Skip this if we are using zram from fstab.
-	using_zram_from_fstab=`getprop ro.boot.using_zram_from_fstab`
-	if [ "$using_zram_from_fstab" == "true" ]; then
-		return
-	fi
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 	MemTotal=${MemTotalStr:16:8}
 
@@ -158,9 +153,6 @@ function configure_memory_parameters() {
 	else
 		echo 4096 > /proc/sys/vm/min_free_kbytes
 	fi
-
-	# yangbq2 disable wbf
-	echo 0 > /proc/sys/vm/watermark_boost_factor
 }
 
 configure_memory_parameters

@@ -84,6 +84,7 @@ subsystem mem_buf_vm
 /dev/smd2                 0660   bluetooth  bluetooth
 /dev/smd3                 0660   bluetooth  bluetooth
 /dev/btpower              0660   bluetooth  system
+/dev/btfmslim             0660   bluetooth  system
 
 #permissions for pta
 /dev/pta                  0660   system     system
@@ -177,6 +178,7 @@ subsystem mem_buf_vm
 
 #QDSS
 /dev/byte-cntr            0660   system    oem_2902
+/dev/byte-cntr1            0660   system    oem_2902
 /dev/mhi_qdss             0660   system    oem_2902
 /sys/class/qdss_bridge/mhi_qdss  mode      0660     system   oem_2902
 
@@ -354,25 +356,6 @@ subsystem mem_buf_vm
 /sys/class/fts/touch_aoi aoi_set 0660 root system
 /sys/class/fts/touch_aoi power_set 0660 root system
 
-# Goodix fingerprint device
-/dev/goodix_fp            0660   system     system
-
-# EgisTech fingerprint device
-/dev/esfp0                0660   system     system
-
-# Change permission for FPC fingerprint
-/sys/class/fingerprint/fpc1020 nav        0440     system    system
-/sys/class/fingerprint/fpc1020 irq        0440     system    system
-/sys/class/fingerprint/fpc1020 irq_cnt    0440     system    system
-/sys/class/fingerprint/fpc1020 dev_enable 0220     system    system
-/sys/class/fingerprint/fpc1020 vendor     0444     system    system
-/sys/class/fingerprint/fpc1020 hw_reset   0220     system    system
-
-/sys/devices/platform/soc/soc\:fpc_fpc1020 irq          0440     system    system
-/sys/devices/platform/soc/soc\:fpc_fpc1020 irq_cnt      0440     system    system
-/sys/devices/platform/soc/soc\:fpc_fpc1020 dev_enable   0220     system    system
-/sys/devices/platform/soc/soc\:fpc_fpc1020 hw_reset     0220     system    system
-
 #ImproveTouch device
 /dev/hbtp_input           0660   system     system
 /dev/hbtp_vm              0660   system     system
@@ -392,16 +375,6 @@ subsystem mem_buf_vm
 
 # This is temporary while using SD card for initial bring-up
 /dev/block/platform/soc/8804000.sdhci/by-name/frp       0600   system     system
-
-# Add device block for MISC
-/dev/block/platform/soc/7464900.sdhci/by-name/misc      0660   root       system
-/dev/block/platform/soc/624000.ufshc/by-name/misc       0660   root       system
-/dev/block/platform/soc/1da4000.ufshc/by-name/misc      0660   root       system
-/dev/block/platform/soc/c0c4000.sdhci/by-name/misc      0660   root       system
-/dev/block/platform/soc/1d84000.ufshc/by-name/misc      0660   root       system
-/dev/block/platform/soc/7c4000.sdhci/by-name/misc       0660   root       system
-/dev/block/platform/soc/4744000.sdhci/by-name/misc      0660   root       system
-/dev/block/platform/soc/4804000.ufshc/by-name/misc      0660   root       system
 
 # Kmsg device
 /dev/kmsg                                               0620   root       system
@@ -532,6 +505,3 @@ subsystem mem_buf_vm
 
 # devcoredump data attributes
 /sys/class/devcoredump/devcd*                           data                            0600    system  system
-
-# Motorola: Add for HIDRAW to access the glass usb device
-/dev/hidraw*             0660    uhid       uhid

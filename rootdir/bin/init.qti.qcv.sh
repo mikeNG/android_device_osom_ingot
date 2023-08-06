@@ -22,6 +22,12 @@ elif [ "$soc_id" -eq 537 ]; then
 elif [ "$soc_id" -eq 568 ]; then
     setprop ro.vendor.qti.soc_name ravelin
     setprop ro.vendor.qti.soc_model SM4450
+elif [ "$soc_id" -eq 581 ]; then
+    setprop ro.vendor.qti.soc_name ravelin
+    setprop ro.vendor.qti.soc_model QCM4450
+elif [ "$soc_id" -eq 582 ]; then
+    setprop ro.vendor.qti.soc_name ravelin
+    setprop ro.vendor.qti.soc_model QCS4450
 elif [ "$soc_id" -eq 506 ] || [ "$soc_id" -eq 547 ] || [ "$soc_id" -eq 564 ]; then
     setprop ro.vendor.qti.soc_name diwali
     setprop ro.vendor.qti.soc_model SM7450
