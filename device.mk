@@ -198,6 +198,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/betterlife_inputdev.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/betterlife_inputdev.kl \
+    $(LOCAL_PATH)/idc/betterlife_inputdev.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/betterlife_inputdev.idc
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
