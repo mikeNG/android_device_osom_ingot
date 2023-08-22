@@ -531,7 +531,7 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libnl \
-    libwfdaac_vendor
+    libwfdaac_vendor:64
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
