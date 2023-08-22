@@ -260,9 +260,7 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/bin/*.sh),\
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
-    IPACM_Filter_cfg.xml \
-    libipanat \
-    liboffloadhal
+    IPACM_Filter_cfg.xml
 
 # IPC router config
 PRODUCT_COPY_FILES += \
