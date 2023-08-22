@@ -521,16 +521,11 @@ PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
+    android.hardware.wifi.hostapd@1.0.vendor \
     hostapd \
     libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    vendor.qti.hardware.wifi.hostapd@1.0.vendor \
-    vendor.qti.hardware.wifi.hostapd@1.1.vendor \
-    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.0.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.2.vendor \
     wpa_supplicant \
     wpa_supplicant.conf
 
