@@ -121,6 +121,14 @@ $(IMS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(IMS_SYMLINKS)
 
+WFD_SERVICE_SYMLINKS := $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/WfdService/lib/arm64
+$(WFD_SERVICE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating WfdService symlinks: $@"
+	@mkdir -p $@
+	$(hide) ln -sf /system_ext/lib64/libwfdnative.so $@/libwfdnative.so
+
+ALL_DEFAULT_INSTALLED_MODULES += $(WFD_SERVICE_SYMLINKS)
+
 CNE_APP_SYMLINKS := $(TARGET_OUT_VENDOR)/app/CneApp/lib/arm64
 $(CNE_APP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating CneApp symlinks: $@"
