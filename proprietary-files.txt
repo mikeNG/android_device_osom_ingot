@@ -2181,7 +2181,6 @@ vendor/bin/qttestservice
 vendor/bin/qvrservicetest
 vendor/bin/qvrservicetest64
 vendor/bin/sigma_dut
-vendor/bin/slim_daemon
 vendor/bin/spectraltool
 vendor/bin/sputestclient
 vendor/bin/sputestclientv2
